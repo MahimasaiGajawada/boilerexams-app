@@ -2,28 +2,19 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-4 py-12">
-      <div className="max-w-2xl w-full text-center space-y-8">
-        <div className="space-y-4">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white tracking-tight">
-            Welcome to{" "}
-            <span className="text-indigo-600 dark:text-indigo-400">
-              BoilerExams
-            </span>
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content text-center">
+        <div className="max-w-md">
+          <h1 className="text-5xl font-bold text-black">
+            Welcome to <span className="text-primary">BoilerExams</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
-            Master your exams with interactive practice questions
+          <p className="py-6 text-black">
+            Master your exams with practice questions.
           </p>
-        </div>
-        
-        <div className="pt-8">
-          <Link
-            href="/questions"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 text-lg"
-          >
-            <span>Get Started</span>
+          <Link href="/questions" className="btn btn-primary">
+            Get Started
             <svg
-              className="w-5 h-5"
+              className="w-5 h-5 ml-2"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -38,6 +29,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
